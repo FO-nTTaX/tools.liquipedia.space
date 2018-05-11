@@ -1,0 +1,131 @@
+* {
+	font-family:'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+	margin:0 0 10px;
+	font-weight:500;
+	padding-bottom:5px;
+	border-bottom:1px solid #eeeeee;
+}
+p {
+	margin:0 0 10px;
+}
+html,
+body {
+	padding:0;
+	margin:0;
+}
+ul {
+	list-style-type:square;
+}
+a,
+a:hover,
+a:visited,
+a:focus {
+	color:#663399;
+}
+body {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#eeddff;
+}
+.wrapper {
+	width:100%;
+	max-width:1000px;
+	box-shadow:0 0 5px #000000;
+	font-size:16px;
+	margin:0 auto;
+	background-color:#ffffff;
+}
+.wrapper-inner {
+	padding:10px;
+	min-height:calc(100vh - 130px);
+}
+.topnav {
+	background-color:#663399;
+}
+.topnav a,
+.topnav a:hover,
+.topnav a:visited,
+.topnav a:focus {
+	color:#eeddff;
+}
+.topnav ul {
+	list-style-type:none;
+	padding-left:0;
+	margin:0;
+}
+.topnav ul li {
+	display:inline;
+}
+.topnav ul li a {
+	padding:15px 10px;
+	display:inline-block;
+	text-decoration:none;
+}
+.topnav ul li a.active,
+.topnav ul li a:hover {
+	background-color:#442266;
+}
+.footer {
+	padding:15px;
+	border-top:1px solid #663399;
+	background-color:#8844cc;
+	color:#ffffff;
+}
+.footer a,
+.footer a:hover,
+.footer a:visited,
+.footer a:focus {
+	color:#eeddff;
+}
+input:not([type]),
+input[type=text],
+input[type=search] {
+	line-height:2em;
+	height:2.56em;
+	width:100%;
+	padding:0 10px;
+	border:1px solid #ccc;
+	box-shadow:0 0 3px #221133;
+}
+input[type="submit"] {
+	color:#ffffff;
+	background-color:#663399;
+	border-color:#663399;
+	display:inline-block;
+	margin-bottom:0;
+	font-weight:normal;
+	text-align:center;
+	vertical-align:middle;
+	touch-action:manipulation;
+	cursor:pointer;
+	background-image:none;
+	border:1px solid transparent;
+	white-space:nowrap;
+	padding:6px 12px;
+	font-size:11pt;
+	line-height:1.42857143;
+	border-radius:0px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+pre {
+	font-family:monospace;
+	padding:10px;
+	color:#000000;
+	background-color:#dddddd;
+	border:1px solid #aaaaaa;
+	white-space:nowrap;
+}
