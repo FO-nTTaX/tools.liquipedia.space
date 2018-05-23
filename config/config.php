@@ -1,46 +1,54 @@
 <?php
 
-$CONFIG = array(
+require __DIR__ . '/../../../db_conf/db.php';
+$CONFIG = [
 	'httpcontext' => stream_context_create(
-		array(
-			'http' => array(
-				'method' => "GET",
+		[
+			'http' => [
+				'method' => 'GET',
 				'header' => "User-Agent: FO-nTTaX Tools\r\n"
-			)
-		)
+			]
+		]
 	),
-	'wikibaseurl' => 'http://liquipedia.net',
+	'wikibaseurl' => 'https://liquipedia.net',
 	'listlimit' => 200,
-	'views' => array(
-		'home' => array(
+	'views' => [
+		'home' => [
 			'name' => 'Home',
 			'inmenu' => true
-		),
-		'recentchanges' => array(
+		],
+		'recentchanges' => [
 			'name' => 'Recent Changes',
 			'inmenu' => true
-		),
-		'pendingchanges' => array(
+		],
+		'pendingchanges' => [
 			'name' => 'Pending Changes',
 			'inmenu' => true
-		),
-		'unreviewedpages' => array(
+		],
+		'unreviewedpages' => [
 			'name' => 'Unreviewed Pages',
 			'inmenu' => true
-		),
-		'search' => array(
+		],
+		'search' => [
 			'name' => 'Search',
 			'inmenu' => true
-		),
-		'github' => array(
+		],
+		'github' => [
 			'name' => 'GitHub',
 			'inmenu' => false
-		),
-		'templateparameter' => array(
+		],
+		'templateparameter' => [
 			'name' => 'Find Template Parameters',
 			'inmenu' => false
-		)
-	)
-);
-
+		],
+		'discord' => [
+			'name' => 'Discord',
+			'inmenu' => false
+		]
+	],
+	'db' => [
+		'user' => $user,
+		'password' => $password
+	]
+];
 ?>
