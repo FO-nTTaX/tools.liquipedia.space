@@ -7,6 +7,7 @@ if(isset($_GET['view'])) {
 	$view = 'home';
 }
 if(!in_array($view, array_keys($CONFIG['views']))) {
+	http_response_code(404);
 	$view = 'home';
 }
 include('../view/parts/menu.php');
