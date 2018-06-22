@@ -33,6 +33,10 @@ $CONFIG = [
 			'name' => 'Search',
 			'inmenu' => true
 		],
+		'log' => [
+			'name' => 'Log',
+			'inmenu' => true
+		],
 		'github' => [
 			'name' => 'GitHub',
 			'inmenu' => false
