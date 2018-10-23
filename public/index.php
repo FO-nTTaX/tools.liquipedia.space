@@ -1,19 +1,18 @@
 <?php
-
-include('../config/config.php');
-if(isset($_GET['view'])) {
-	$view = $_GET['view'];
+include( '../config/config.php' );
+if ( isset( $_GET[ 'view' ] ) ) {
+	$view = $_GET[ 'view' ];
 } else {
 	$view = 'home';
 }
-if(!in_array($view, array_keys($CONFIG['views']))) {
-	http_response_code(404);
+if ( !in_array( $view, array_keys( $CONFIG[ 'views' ] ) ) ) {
+	http_response_code( 404 );
 	$view = 'home';
 }
-include('../view/parts/menu.php');
-include('../view/parts/footer.php');
-include('../view/' . $view . '.php');
-
+include( '../view/parts/functions.php' );
+include( '../view/parts/menu.php' );
+include( '../view/parts/footer.php' );
+include( '../view/' . $view . '.php' );
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,23 +24,19 @@ include('../view/' . $view . '.php');
 		<meta name="description" content="liquipedia.tools is a collection of tools that are aimed to make the life of Liquipedia editors a bit easier.">
 		<link rel="icon" href="/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-		<link href="/css/main.css" rel="stylesheet"> 
-		<link href="/css/tools.css" rel="stylesheet"> 
+		<link href="/css/main.css" rel="stylesheet">
+		<link href="/css/tools.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="wrapper">
-			<?php
-				echo $menu;
-			?>
+			<?php echo $menu; ?>
 			<div class="wrapper-inner">
 				<?php
-					echo '<h1>' . $CONFIG['views'][$view]['name'] . '</h1>';
-					echo $text;
+				echo '<h1>' . $CONFIG[ 'views' ][ $view ][ 'name' ] . '</h1>';
+				echo $text;
 				?>
 			</div>
-			<?php
-				echo $footer;
-			?>
+			<?php echo $footer; ?>
 		</div>
 	</body>
 </html>
