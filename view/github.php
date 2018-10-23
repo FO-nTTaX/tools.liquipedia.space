@@ -2,7 +2,7 @@
 
 $githubbaseurl = 'https://github.com/';
 $githubteam = 'Liquipedia';
-$gitinfo = json_decode( file_get_contents_gzip( 'https://api.github.com/orgs/' . $githubteam . '/events', false, $CONFIG[ 'httpcontext' ] ), true );
+$gitinfo = json_decode( file_get_contents_gzip( 'https://api.github.com/orgs/' . $githubteam . '/events' ), true );
 $text = '';
 
 $text .= '<ul>';
