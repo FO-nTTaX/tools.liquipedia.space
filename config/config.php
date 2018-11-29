@@ -48,6 +48,10 @@ $CONFIG = [
 		'discord' => [
 			'name' => 'Discord',
 			'inmenu' => false
+		],
+		'timezonedetect' => [
+			'name' => 'Timezone Detect',
+			'inmenu' => false
 		]
 	],
 	'db' => [
