@@ -12,7 +12,7 @@ while ( $row = $res->fetchObject() ) {
 	if ( !in_array( $row->channel, [ 'staff', 'football', 'social-media-suggestions', 'community-twitters' ] ) ) {
 		$text .= '<tr>';
 		$text .= '<th>' . ( ++$i ) . '</th>';
-		$text .= '<td>#' . $row->channel . '</td>';
+		$text .= '<td>#' . htmlspecialchars( $row->channel ) . '</td>';
 		$text .= '<td>' . $row->count . '</td>';
 		$text .= '<td>' . $row->naughtycount . '</td>';
 		$text .= '</tr>';
@@ -29,7 +29,7 @@ $i = 0;
 while ( $row = $res->fetchObject() ) {
 	$text .= '<tr>';
 	$text .= '<th>' . ( ++$i ) . '</th>';
-	$text .= '<td>' . $row->user . '</td>';
+	$text .= '<td>' . htmlspecialchars( $row->user ) . '</td>';
 	$text .= '<td>' . $row->count . '</td>';
 	$text .= '<td>' . $row->naughtycount . '</td>';
 	$text .= '</tr>';
