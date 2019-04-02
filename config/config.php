@@ -6,8 +6,8 @@ $CONFIG = [
 		[
 			'http' => [
 				'method' => 'GET',
-				'header' => "User-Agent: FO-nTTaX Tools\r\nAccept-Encoding: gzip,deflate,sdch\r\n"
-			]
+				'header' => "User-Agent: FO-nTTaX Tools\r\nAccept-Encoding: gzip,deflate,sdch\r\n",
+			],
 		]
 	),
 	'wikibaseurl' => 'https://liquipedia.net',
@@ -15,48 +15,47 @@ $CONFIG = [
 	'views' => [
 		'home' => [
 			'name' => 'Home',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'recentchanges' => [
 			'name' => 'Recent Changes',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'pendingchanges' => [
 			'name' => 'Pending Changes',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'unreviewedpages' => [
 			'name' => 'Unreviewed Pages',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'search' => [
 			'name' => 'Search',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'log' => [
 			'name' => 'Log',
-			'inmenu' => true
+			'inmenu' => true,
 		],
 		'github' => [
 			'name' => 'GitHub',
-			'inmenu' => false
+			'inmenu' => false,
 		],
 		'templateparameter' => [
 			'name' => 'Find Template Parameters',
-			'inmenu' => false
+			'inmenu' => false,
 		],
 		'discord' => [
 			'name' => 'Discord',
-			'inmenu' => false
+			'inmenu' => false,
 		],
 		'timezonedetect' => [
 			'name' => 'Timezone Detect',
-			'inmenu' => false
-		]
+			'inmenu' => false,
+		],
 	],
 	'db' => [
 		'user' => $user,
-		'password' => $password
-	]
+		'password' => $password,
+	],
 ];
-?>
