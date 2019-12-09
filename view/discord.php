@@ -3,7 +3,7 @@
 $db = new PDO( 'mysql:dbname=liquipedia_discord;host=localhost', $CONFIG[ 'db' ][ 'user' ], $CONFIG[ 'db' ][ 'password' ] );
 $res = $db->prepare( 'SELECT `channel`, SUM(`counter`) as `count`, SUM(`naughtycounter`) as `naughtycount` FROM `liquipedia_discord` GROUP BY `channel` ORDER BY `count` DESC LIMIT 500' );
 $res->execute();
-$text = '<a href="https://liquipedia.net/discord" target="_blank">Link to the server</a>';
+$text = '<a href="https://discord.gg/liquipedia" target="_blank">Link to the server</a>';
 $text .= '<h2>Liquipedia Discord active channels</h2>';
 $text .= '<table>';
 $text .= '<tr><th>#</th><th>Channel</th><th>Count</th><th>Naughty Count</th></tr>';
