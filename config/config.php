@@ -53,6 +53,10 @@ $CONFIG = [
 			'name' => 'Timezone Detect',
 			'inmenu' => false,
 		],
+		'pagesfordeletion' => [
+			'name' => 'Pages For Deletion',
+			'inmenu' => false,
+		],
 	],
 	'db' => [
 		'user' => $user,
