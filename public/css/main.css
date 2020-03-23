@@ -129,6 +129,9 @@ pre {
 	border:1px solid #aaaaaa;
 	white-space:nowrap;
 }
+.table-responsive {
+	overflow-x: auto;
+}
 table {
 	border-collapse:collapse;
 }

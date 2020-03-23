@@ -5,6 +5,7 @@ $sCategory = 'Category:Articles_listed_for_deletion';
 $iTotal = 0;
 $text = '';
 
+$text .= '<div class="table-responsive">';
 $text .= '<table>';
 foreach ( $CONFIG[ 'wikis' ][ 'allwikis' ] as $sWiki => $aWiki ) {
 	$sData = file_get_contents_gzip( $aWiki[ 'api' ] . '?action=query&format=json&prop=categoryinfo&titles=' . $sCategory );
@@ -35,3 +36,4 @@ $text .= $iTotal;
 $text .= '</td>';
 $text .= '</tr>';
 $text .= '</table>';
+$text .= '</div>';

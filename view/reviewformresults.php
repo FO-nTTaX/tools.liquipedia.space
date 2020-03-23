@@ -3,6 +3,7 @@
 $CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
 
 $text = '<h2>Liquipedia Review Form Results</h2>';
+$text .= '<div class="table-responsive">';
 $text .= '<table>';
 
 $text .= '<tr>';
@@ -45,3 +46,4 @@ foreach ( $btnnames as $btnname ) {
 $text .= '</tr>';
 
 $text .= '</table>';
+$text .= '</div>';

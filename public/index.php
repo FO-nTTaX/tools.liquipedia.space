@@ -1,20 +1,18 @@
 <?php
-include( '../config/config.php' );
-if ( isset( $_GET[ 'view' ] ) ) {
-	$view = $_GET[ 'view' ];
-} else {
+require __DIR__ . '/../config/config.php';
+$view = filter_input( INPUT_GET, 'view' );
+if ( !$view ) {
 	$view = 'home';
 }
 if ( !in_array( $view, array_keys( $CONFIG[ 'views' ] ) ) ) {
 	http_response_code( 404 );
 	$view = 'home';
 }
-include( '../view/parts/functions.php' );
-include( '../view/parts/menu.php' );
-include( '../view/parts/footer.php' );
-include( '../view/' . $view . '.php' );
-?>
-<!DOCTYPE html>
+require __DIR__ . '/../view/parts/functions.php';
+require __DIR__ . '/../view/parts/menu.php';
+require __DIR__ . '/../view/parts/footer.php';
+require __DIR__ . '/../view/' . $view . '.php';
+?><!DOCTYPE html>
 <html>
 	<head>
 		<title>liquipedia.tools</title>

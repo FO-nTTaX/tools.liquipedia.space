@@ -57,6 +57,10 @@ $CONFIG = [
 			'name' => 'Pages For Deletion',
 			'inmenu' => false,
 		],
+		'extensions' => [
+			'name' => 'MediaWiki Extensions',
+			'inmenu' => false,
+		],
 	],
 	'db' => [
 		'user' => $user,

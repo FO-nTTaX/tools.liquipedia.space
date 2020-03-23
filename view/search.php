@@ -2,8 +2,9 @@
 
 $text = '';
 $text .= '<form method="post" action="?view=search"><input type="search" name="search"></form>';
-if ( isset( $_POST[ 'search' ] ) ) {
-	$search = urlencode( htmlspecialchars( $_POST[ 'search' ] ) );
+$search = filter_input( INPUT_POST, 'search' );
+if ( $search ) {
+	$search = urlencode( htmlspecialchars( $search ) );
 	$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
 	foreach ( $CONFIG[ 'wikis' ][ 'allwikis' ] as $sWiki => $aWiki ) {
 		$text .= '<h2 id="' . $sWiki . '">' . $aWiki[ 'name' ] . '</h2>';

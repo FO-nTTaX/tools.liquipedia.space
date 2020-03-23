@@ -1,8 +1,8 @@
 <?php
 
-$work = '';
-if ( isset( $_POST[ 'work' ] ) ) {
-	$work = $_POST[ 'work' ];
+$work = filter_input( INPUT_POST, 'work' );
+if ( !$work ) {
+	$work = '';
 }
 
 $text = '<form method="post">
