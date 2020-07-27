@@ -19,8 +19,8 @@ $text .= '<tr><th>Theme</th><th>Primary</th><th>Secondary</th></tr>';
 foreach ( $aThemes as $sName => $aData ) {
 	$text .= '<tr>';
 	$text .= '<td>' . htmlspecialchars( $sName ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
 	$text .= '</tr>';
 }
 $text .= '</tbody></table>';
@@ -37,8 +37,8 @@ $text .= '<tr><th>Theme</th><th>Primary</th><th>Secondary</th></tr>';
 foreach ( $aThemes as $sName => $aData ) {
 	$text .= '<tr>';
 	$text .= '<td>' . htmlspecialchars( $sName ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
 	$text .= '</tr>';
 }
 $text .= '</tbody></table>';
@@ -55,8 +55,8 @@ $text .= '<tr><th>Theme</th><th>Primary</th><th>Secondary</th></tr>';
 foreach ( $aThemes as $sName => $aData ) {
 	$text .= '<tr>';
 	$text .= '<td>' . htmlspecialchars( $sName ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
-	$text .= '<td style="background-color:' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'primary' ] . '">' . htmlspecialchars( $aData[ 'primary' ] ) . '</td>';
+	$text .= '<td style="border-bottom:10px solid ' . $aData[ 'secondary' ] . '">' . htmlspecialchars( $aData[ 'secondary' ] ) . '</td>';
 	$text .= '</tr>';
 }
 $text .= '</tbody></table>';
