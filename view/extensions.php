@@ -1,8 +1,5 @@
 <?php
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', '1' );
-
 $CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
 ksort( $CONFIG[ 'wikis' ][ 'allwikis' ] );
 $aInstalledExtensionInformation = [];
@@ -26,7 +23,6 @@ foreach ( $CONFIG[ 'wikis' ][ 'allwikis' ] as $sWiki => $aWiki ) {
 	}
 }
 ksort( $aInstalledExtensionInformation );
-#var_dump( $aInstalledExtensions );
 
 $text = '';
 

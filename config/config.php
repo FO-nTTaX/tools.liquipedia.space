@@ -65,6 +65,10 @@ $CONFIG = [
 			'name' => 'Bruinen Themes',
 			'inmenu' => false,
 		],
+		'jobs' => [
+			'name' => 'MediaWiki Jobs',
+			'inmenu' => false,
+		],
 	],
 	'db' => [
 		'user' => $user,
