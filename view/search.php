@@ -10,7 +10,7 @@ if ( $search ) {
 		$text .= '<h2 id="' . $sWiki . '">' . $aWiki[ 'name' ] . '</h2>';
 		$bHasPages = true;
 		$sContinue = '&continue=';
-		$sPages = file_get_contents_gzip( $aWiki[ 'api' ] . '?action=query&format=json&list=search&srsearch=' . $search . '&srnamespace=0|4|10&srlimit=' . $CONFIG[ 'listlimit' ] . $sContinue );
+		$sPages = file_get_contents_gzip( $aWiki[ 'api' ] . '?action=query&format=json&list=search&srsearch=' . $search . '&srnamespace=*&srlimit=' . $CONFIG[ 'listlimit' ] . '&utf8=' . $sContinue );
 		$aPages = json_decode( $sPages, true );
 		if ( (isset( $aPages[ 'query' ][ 'search' ] )) && (count( $aPages[ 'query' ][ 'search' ] ) > 0) ) {
 			$bHasPages = true;
