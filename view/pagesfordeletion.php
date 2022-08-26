@@ -2,6 +2,9 @@
 
 $CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
 $sCategory = 'Category:Articles_listed_for_deletion';
+if ( filter_has_var( INPUT_GET, 'category' ) ) {
+	$sCategory = filter_input( INPUT_GET, 'category' );
+}
 $iTotal = 0;
 $text = '';
 
