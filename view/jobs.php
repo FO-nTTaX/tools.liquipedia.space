@@ -12,7 +12,7 @@ foreach ( $CONFIG[ 'wikis' ][ 'allwikis' ] as $sWiki => $aWiki ) {
 	];
 }
 
-usort( $aWikiData,function( $a, $b ) {
+usort( $aWikiData, function( $a, $b ) {
 	if ( $a[ 'jobs' ] === $b[ 'jobs' ] ) {
 		return $a[ 'name' ] < $b[ 'name' ] ? -1 : 1;
 	}
