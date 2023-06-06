@@ -1,8 +1,8 @@
 <?php
 
 $text = '';
-$text .= '<form method="post" action="?view=search"><input type="search" name="search"></form>';
 $search = filter_input( INPUT_POST, 'search' );
+$text .= '<form method="post" action="?view=search"><input type="search" name="search"' . (filter_has_var( INPUT_POST, 'search' ) ? ' value="' . htmlspecialchars( $search ) . '"' : '') . '></form>';
 if ( $search ) {
 	$search = urlencode( $search );
 	$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
