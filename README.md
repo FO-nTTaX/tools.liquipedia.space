@@ -1,4 +1,4 @@
-# tools.liquipedia.space
+# tools.liquipedia.0xff0000.dev
 Source code for https://tools.liquipedia.0xff0000.dev
 
 The Liquipedia logo and brand belong to Liquipedia and are not under the MIT license
