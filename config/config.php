@@ -7,6 +7,7 @@ $CONFIG = [
 			'http' => [
 				'method' => 'GET',
 				'header' => "User-Agent: FO-nTTaX Tools\r\nAccept-Encoding: gzip,deflate,sdch\r\n",
+				'timeout' => 5.0,
 			],
 		]
 	),
