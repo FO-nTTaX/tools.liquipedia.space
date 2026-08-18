@@ -62,10 +62,6 @@ $CONFIG = [
 			'name' => 'MediaWiki Extensions',
 			'inmenu' => false,
 		],
-		'bruinenthemes' => [
-			'name' => 'Bruinen Themes',
-			'inmenu' => false,
-		],
 		'jobs' => [
 			'name' => 'MediaWiki Jobs',
 			'inmenu' => false,
