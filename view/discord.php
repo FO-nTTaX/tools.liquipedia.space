@@ -39,4 +39,4 @@ while ( $row = $res2->fetchObject() ) {
 	$text .= '</tr>';
 }
 $text .= '</table>';
-$text .= '<div>';
+$text .= '</div>';
