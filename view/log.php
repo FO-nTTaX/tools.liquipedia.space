@@ -2,7 +2,7 @@
 
 $text = '';
 $text .= '<form method="get"><input type="hidden" name="view" value="log"><input type="text" name="type" placeholder="type"></form>';
-$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
+$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php' ), true );
 $params = '';
 
 $type = filter_input( INPUT_GET, 'type' );

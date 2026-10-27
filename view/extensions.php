@@ -1,6 +1,6 @@
 <?php
 
-$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php?action=listwikis' ), true );
+$CONFIG[ 'wikis' ] = json_decode( file_get_contents_gzip( $CONFIG[ 'wikibaseurl' ] . '/api.php' ), true );
 ksort( $CONFIG[ 'wikis' ][ 'allwikis' ] );
 $aInstalledExtensionInformation = [];
 $aInstalledExtensions = [];
